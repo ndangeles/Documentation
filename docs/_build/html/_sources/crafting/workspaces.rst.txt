@@ -1,7 +1,4 @@
 Workspaces
-<<<<<<< HEAD
-==========
-=======
 ==========
 
 Here you will find the documentation regarding Skills Workflow workspaces.
@@ -35,4 +32,3 @@ Options
 
 
 .. _GitHub Workspaces: https://github.com/SkillsWorkflow/Dashboards/
->>>>>>> master
