@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Skills Workflow
+# This file is distributed under the same license as the Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-30 02:16+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../crafting/automations.rst:2
+msgid "Automations"
+msgstr ""
+
+#: ../../crafting/sdk.rst:2
+msgid "SDK"
+msgstr ""
+
+#: ../../crafting/sdk.rst:4
+msgid "There was a need to have a set of tools to be used on the system. This SDK can be used anywhere on the system, but it is mostly used on Workspaces."
+msgstr ""
+
+#: ../../crafting/sdk.rst:9
+msgid "Whenever you need to use any SDK method you will need to access to the namespace **SW**"
+msgstr ""
+
+#: ../../crafting/sdk.rst:16
+msgid "Methods"
+msgstr ""
+
+#: ../../crafting/sdk.rst:17
+msgid "Below you can find the methods available."
+msgstr ""
+
+#: ../../crafting/sdk.rst:20
+msgid "setAttribute"
+msgstr ""
+
+#: ../../crafting/sdk.rst:22
+#: ../../crafting/sdk.rst:44
+msgid "**When to use**"
+msgstr ""
+
+#: ../../crafting/sdk.rst:24
+msgid "Use the setAttribute method when you want to set a Class, Style or any other attribute to an element."
+msgstr ""
+
+#: ../../crafting/sdk.rst:27
+#: ../../crafting/sdk.rst:48
+msgid "**Syntax**"
+msgstr ""
+
+#: ../../crafting/sdk.rst:33
+#: ../../crafting/sdk.rst:54
+msgid "**Example**"
+msgstr ""
+
+#: ../../crafting/sdk.rst:42
+msgid "setRAG"
+msgstr ""
+
+#: ../../crafting/sdk.rst:46
+msgid "Use the setRAG method when you want to set an element color as Red, Ambar or Green according to the specified conditions."
+msgstr ""
+
+#: ../../crafting/sdk.rst:60
+msgid "**Arguments**"
+msgstr ""
+
+#: ../../crafting/sdk.rst:62
+msgid "Explaining the result from the template above:"
+msgstr ""
+
+#: ../../crafting/sdk.rst:64
+msgid "When i.value is greater than 15 then the color of element **e** will be Red"
+msgstr ""
+
+#: ../../crafting/sdk.rst:65
+msgid "When i.value is between 5 and 15 then the color of element **e** will be Ambar"
+msgstr ""
+
+#: ../../crafting/sdk.rst:66
+msgid "When i.value is less than 5 then the element **e** will be Green"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:2
+msgid "Workspaces"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:4
+msgid "Here you will find the documentation regarding Skills Workflow workspaces. Check on github the available workspaces: `GitHub Workspaces`_"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:9
+msgid "Panels"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:12
+msgid "Grid"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:14
+msgid "The grid is ver nice"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:17
+msgid "another level"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:22
+msgid "Chart"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:24
+msgid "The chart is cool"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:28
+msgid "Configurations"
+msgstr ""
+
+#: ../../crafting/workspaces.rst:31
+msgid "Options"
+msgstr ""
+
