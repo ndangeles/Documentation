@@ -1,5 +1,2 @@
 Automations
 ===========
-
-This is awsome
---------------
