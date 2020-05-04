@@ -3,6 +3,5 @@ Releases
 
 .. toctree::
    :glob:
-   :hidden:
 
    *
