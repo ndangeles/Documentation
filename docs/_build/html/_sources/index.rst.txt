@@ -53,36 +53,35 @@ Beautiful Insights
 
 .. _Skills Workflow: https://skillsworkflow.com/
 
+
 .. toctree::
-   :maxdepth: 1
    :caption: Crafting
+   :hidden:
+   :glob:
 
-   crafting/automations
-   crafting/sdk
-   crafting/workspaces
+   crafting/sdk/*
+   crafting/workspaces/*
 
 
 .. toctree::
-   :maxdepth: 1
    :caption: Configuration
+   :maxdepth: 1
+   :hidden:
+   :glob:
 
-   configuration/achievements
-   configuration/articles
-   configuration/clients
-   configuration/company
+   configuration/*
 
 .. toctree::
-   :maxdepth: 1
    :caption: Products
+   :maxdepth: 1
+   :hidden:
+   :glob:
 
-   products/file-system
-   products/project
-   products/timesheets
+   products/*
 
 .. toctree::
-   :maxdepth: 1
    :caption: What's new?
+   :maxdepth: 1
+   :hidden:
 
-   whatsnew/releases
-   
-* :ref:`search`
+   whatsnew/index

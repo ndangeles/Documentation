@@ -1,0 +1,8 @@
+Releases
+========
+
+.. toctree::
+   :glob:
+   :hidden:
+
+   *
