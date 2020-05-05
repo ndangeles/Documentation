@@ -1,0 +1,9 @@
+Store
+=====
+
+**When to use**
+
+Use this workspace whenever you need to update or import a workspace into your environment.
+
+.. image:: store/store.png
+    :width: 80%
