@@ -8,3 +8,4 @@ They are ready to be imported into your system.
    :glob:
    
    *
+   menu/*
