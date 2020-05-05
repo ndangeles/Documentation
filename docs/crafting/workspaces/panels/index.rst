@@ -1,7 +1,0 @@
-Panels
-======
-
-.. toctree::
-   :glob:
-   
-   *

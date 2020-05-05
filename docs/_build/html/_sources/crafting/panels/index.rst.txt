@@ -1,0 +1,8 @@
+Panels
+======
+
+
+.. toctree::
+   :glob:
+   
+   chart/*

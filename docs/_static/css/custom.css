@@ -14,3 +14,7 @@ body{
     overflow-x: hidden;
     background: #edf0f2;
 }
+
+.wy-nav-content {
+    max-width: 100%;
+}
