@@ -14,11 +14,50 @@ body{
     overflow-x: hidden;
     background: #edf0f2;
 }
+.wy-nav-side {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 2em;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100%;
+    color: #9b9b9b;
+    background: #f3f8fe;
+    z-index: 200;
+}
+
+.wy-menu-vertical a {
+    display: inline-block;
+    line-height: 18px;
+    padding: .4045em 1.618em;
+    display: block;
+    position: relative;
+    font-size: 90%;
+    color: #797979;
+}
+
+.wy-menu-vertical a:hover {
+    color: #1a1a1a;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a {
+    color: #0072c6;
+    padding: .4045em 1.618em;
+    font-weight: bold;
+    position: relative;
+    background: #fcfcfc;
+    border: none;
+}
 
 .wy-nav-content {
     max-width: 100%;
+    max-height: 100%;
 }
-
 
 .admonition, .note {
     border-color: #ffcd54 !important;
@@ -44,6 +83,14 @@ body{
     text-align: left;
 }
 
+ .first.admonition-title{
+    display: none;
+}
+
+.last {
+    margin-left: 35px;
+    padding: 10px;
+}
 .note:before {
     content: " ";
     position: absolute;

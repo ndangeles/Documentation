@@ -7,5 +7,4 @@ They are ready to be imported into your system.
 .. toctree::
    :glob:
    
-   *
    menu/*
