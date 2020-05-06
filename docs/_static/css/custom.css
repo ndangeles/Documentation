@@ -38,6 +38,31 @@ body{
     text-align: left;
 }
 
+
+.wy-nav-side {
+    color: #9b9b9b;
+    background: #f3f8fe;
+}
+
+.wy-menu-vertical a {
+    color: #797979;
+}
+
+.wy-menu-vertical a:hover {
+    color: #1a1a1a;
+    background-color: transparent;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a {
+    color: #0072c6;
+    background: #fcfcfc;
+}
+
+.wy-nav-content {
+    max-width: 100%;
+}
+
+
  .first.admonition-title{
     display: none;
 }
