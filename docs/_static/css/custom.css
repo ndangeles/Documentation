@@ -54,10 +54,7 @@ body{
     border: none;
 }
 
-.wy-nav-content {
-    max-width: 100%;
-    max-height: 100%;
-}
+
 
 .admonition, .note {
     border-color: #ffcd54 !important;
