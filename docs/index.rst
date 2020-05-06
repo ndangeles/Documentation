@@ -6,6 +6,8 @@
 Welcome to Skills Workflow's documentation
 ==========================================
 
+.. note:: Hi! My name is Skillo. I'll be here to guide you walkthrough! 
+
 `Skills Workflow`_ is a *groundbreaking platform* for agencies.
 A platform to design your agency.
 People make the difference.
