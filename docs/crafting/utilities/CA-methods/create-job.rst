@@ -1,9 +1,17 @@
 Create Job
 ==========
 
-To  create you have available a method.
+| Create a new Job instance.
 
 .. code-block:: c#
     :linenos:
 
-    Host.createJob()
+    IJobObject CreateJob()
+
+
+| Usage Example:
+
+.. code-block:: c#
+    :linenos:
+
+    var newJob = Host.CreateJob()

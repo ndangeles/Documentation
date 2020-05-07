@@ -54,3 +54,40 @@ The following is the C# statement.
         }
     }
     return ActionResult.Success();
+
+
+**Template**
+
+| This action requires a Job Type template, with a structure similar to the one below.
+| Each object inside the Tasks list contains the Subject, DepartmentName, JobTypeName and IsDeliverable properties. For each of these objects, a Job will be created with the defined properties.
+
+.. code-block:: json
+    :linenos:
+
+    {
+        "name": "CreateTasksFromJobType Example Template",
+        "type": "CreateTasksFromJobType",
+        "documentTypeName": null,
+        "documentId": "b21572ab-e2a9-4789-8ec1-31f1e4377e88",
+        "editorWorkspaceId": null,
+        "editorWorkspaceName": null,
+        "category": "",
+        "layout": "",
+        "description": "JobType",
+        "details": {
+            "Tasks": [
+                {
+                    "Subject": "Concert Hall",
+                    "DepartmentName": "Account Management",
+                    "JobTypeName": "Radio",
+                    "IsDeliverable": false
+                },
+            {
+                    "Subject": "Concert Hall 2",
+                    "DepartmentName": "Interactive Production",
+                    "JobTypeName": "Other",
+                    "IsDeliverable": false
+                }
+            ]
+        }
+    }

@@ -1,7 +1,0 @@
-CreateJobsFromEstimante
-=======================
-
-Description
------------
-
-This custom action is 
