@@ -1,14 +1,14 @@
 CreateTasksFromJobType
 ======================
 
+**Compatible documents**
+Job
+
 **When to use**
 
-There was a need to create tasks directly from Job Type.
+There was a need to create tasks (Jobs) directly from the Job Type.
 Add this action to a the workflow transition to create automatically tasks.
-
-**Syntax**
-
-The following is the C# statement.
+(Remember: This code is the default implementation which can be modified anytime in the system)
 
 .. code-block:: c#
     :linenos:

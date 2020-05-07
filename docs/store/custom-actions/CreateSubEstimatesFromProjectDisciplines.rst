@@ -1,6 +1,14 @@
 CreateSubEstimatesFromProjectDisciplines
 ========================================
 
+**Compatible documents**
+Estimate
+
+**When to use**
+
+| For each Department in the Estimate's Project, a new Estimate will be automatically created.
+| If a template is available, one can define per Job Type, the eligible Departments for the Estimate creation. 
+| (Remember: This code is the default implementation which can be modified anytime in the system)
 
 .. code-block:: c#
     :linenos:
@@ -20,12 +28,12 @@ CreateSubEstimatesFromProjectDisciplines
 
     if (!(Document is IEstimateObject estimate) || estimate.ProjectObject == null)
         return ActionResult.Success();
-    var templates = await Host.GetTemplatesAsync(0, 100, ""CreateSubEstimatesFromProjectDisciplines"", null, estimate.JobTypeObject.Id.ToString(), null);
+    var templates = await Host.GetTemplatesAsync(0, 100, "CreateSubEstimatesFromProjectDisciplines", null, estimate.JobTypeObject.Id.ToString(), null);
     if (estimate.ProjectObject == null)
         return ActionResult.Success();
     if (templates.Count() == 0)
     {
-        var departments = await Host.GetDepartmentsAsync("""", null, null, estimate.ProjectObject.Id);
+        var departments = await Host.GetDepartmentsAsync("", null, null, estimate.ProjectObject.Id);
         foreach (var department in departments)
         {
             var jobType = department.JobTypesList.FirstOrDefault(jt => jt.Active);
@@ -46,7 +54,7 @@ CreateSubEstimatesFromProjectDisciplines
             newEstimate.EstimateTypeId = estimate.EstimateTypeId;
             newEstimate.ParentEstimateObject = estimate;
             newEstimate.IgnoreChanges = false;
-            newEstimate.Name = estimate.Name + "" - "" + department.Name;
+            newEstimate.Name = estimate.Name + " - " + department.Name;
             newEstimate.DocumentTypeObject = estimate.DocumentTypeObject;
         }
     }
@@ -55,7 +63,7 @@ CreateSubEstimatesFromProjectDisciplines
         var template = templates.First();
         var details = Host.DeserializeObject<CreateSubEstimatesFromProjectDisciplinesDto>(template.Details.ToString());
         if (details == null) return ActionResult.Success();
-        var projectDepartments = await Host.GetDepartmentsAsync("""", null, null, estimate.ProjectObject.Id);
+        var projectDepartments = await Host.GetDepartmentsAsync("", null, null, estimate.ProjectObject.Id);
         var detailsDepartmentsIds = new HashSet<Guid>(details.Departments.Select(d => d.Id));
         foreach (var detailDepartment in projectDepartments.Where(d => detailsDepartmentsIds.Contains(d.Id)))
         {
@@ -78,7 +86,7 @@ CreateSubEstimatesFromProjectDisciplines
             newEstimate.EstimateTypeId = estimate.EstimateTypeId;
             newEstimate.ParentEstimateObject = estimate;
             newEstimate.IgnoreChanges = false;
-            newEstimate.Name = estimate.Name + "" - "" + department.Name;
+            newEstimate.Name = estimate.Name + " - " + department.Name;
             newEstimate.DocumentTypeObject = estimate.DocumentTypeObject;
         }
     }
