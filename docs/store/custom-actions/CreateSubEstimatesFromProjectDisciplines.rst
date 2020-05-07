@@ -7,7 +7,7 @@ Estimate
 **When to use**
 
 | For each Department in the Estimate's Project, a new Estimate will be automatically created.
-| If a template is available, one can define per Job Type, the eligible Departments for the Estimate creation. 
+| If a template is available (which is not required), one can define per Job Type, the eligible Departments for the Estimate creation. 
 | (Remember: This code is the default implementation which can be modified anytime in the system)
 
 .. code-block:: c#
@@ -91,3 +91,36 @@ Estimate
         }
     }
     return ActionResult.Success();
+
+
+**Template**
+
+| This action requires a Job Type template, with a structure similar to the one below.
+| Each object contains the JobTypeId along with a list of the Departments, each with the Id. This way, only the added Departments will generate an Estimate.
+
+.. code-block:: json
+    :linenos:
+
+    {
+        "name": "CreateSubEstimatesFromProjectDisciplines Example Template",
+        "type": "CreateSubEstimatesFromProjectDisciplines",
+        "documentTypeName": null,
+        "documentId": "b21572ab-e2a9-4789-8ec1-31f1e4377e88",
+        "editorWorkspaceId": null,
+        "editorWorkspaceName": null,
+        "category": "",
+        "layout": "",
+        "description": "JobType",
+        "details": {
+            "JobTypeId": "b21572ab-e2a9-4789-8ec1-31f1e4377e88",
+            "Departments": 
+            [
+                {
+                    "Id": "7D7C827F-511B-44D4-BDDC-9948B05C636E"
+                },
+                {
+                    "Id": "E6E2B7F5-5D59-4682-935F-69D2F96620AC"
+                }
+            ]
+        }
+    }
