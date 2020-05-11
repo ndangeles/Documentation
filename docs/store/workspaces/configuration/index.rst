@@ -7,7 +7,7 @@ They are ready to be imported into your system.
 
 Please use the :doc:`store </store/workspaces/menu/store>`.  workspace to import the latest version of the workspace.
 
-.. image:: images/configuration.png
+.. image:: assets/configuration.png
    :width: 80%
 
 
