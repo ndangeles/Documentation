@@ -6,3 +6,4 @@ Panels
    :glob:
    
    chart/*
+   grid/*

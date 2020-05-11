@@ -12,6 +12,6 @@ This SDK can be used anywhere on the system, but it is mostly used on Workspaces
 
 .. toctree::
    :glob:
-   
+
    methods/index
-   CA-methods/index
+   custom-actions-methods/index

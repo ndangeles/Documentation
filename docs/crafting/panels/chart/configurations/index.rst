@@ -1,7 +1,7 @@
 Configurations
 ==============
 
-here you can find all the condifgs
+here you can find all the configurations available for the panel Chart.
 
 .. toctree::
    :glob:
