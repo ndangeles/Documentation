@@ -77,6 +77,12 @@ Beautiful Insights
    
 
 .. toctree::
+   :caption: University
+   :maxdepth: 1
+
+   university/index
+
+.. toctree::
    :caption: What's new?
    :maxdepth: 1
    :hidden:
