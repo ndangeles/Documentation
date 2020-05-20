@@ -16,14 +16,13 @@ Estimate
     [Serializable]
     public class CreateSubEstimatesFromProjectDisciplinesDto
     {
-        public Guid JobTypeId { get; set; }
         public IEnumerable<CreateSubEstimatesFromProjectDisciplinesDepartmentDto> Departments { get; set; }
     }
 
     [Serializable]
     public class CreateSubEstimatesFromProjectDisciplinesDepartmentDto
     {
-        public Guid Id { get; set; }
+        public string DepartmentName { get; set; }
     }
 
     if (!(Document is IEstimateObject estimate) || estimate.ProjectObject == null)
@@ -62,12 +61,12 @@ Estimate
     {
         var template = templates.First();
         var details = Host.DeserializeObject<CreateSubEstimatesFromProjectDisciplinesDto>(template.Details.ToString());
-        if (details == null) return ActionResult.Success();
+        if (!template.DocumentId.HasValue || details == null) return ActionResult.Success();
         var projectDepartments = await Host.GetDepartmentsAsync("", null, null, estimate.ProjectObject.Id);
-        var detailsDepartmentsIds = new HashSet<Guid>(details.Departments.Select(d => d.Id));
-        foreach (var detailDepartment in projectDepartments.Where(d => detailsDepartmentsIds.Contains(d.Id)))
+        var detailsDepartmentsNames = new HashSet<string>(details.Departments.Select(d => d.DepartmentName));
+        foreach (var detailDepartment in projectDepartments.Where(d => detailsDepartmentsNames.Contains(d.Name)))
         {
-            var jobType = await Host.GetJobTypeByIdAsync(details.JobTypeId);
+            var jobType = await Host.GetJobTypeByIdAsync(template.DocumentId.Value);
             var department = await Host.GetDepartmentByIdAsync(detailDepartment.Id);
             if (department == null || jobType == null) continue;
             var newEstimate = Host.CreateEstimate();
@@ -90,7 +89,7 @@ Estimate
             newEstimate.DocumentTypeObject = estimate.DocumentTypeObject;
         }
     }
-    return ActionResult.Success();
+    return ActionResult.Success(); 
 
 
 **Template**
@@ -112,15 +111,18 @@ Estimate
         "layout": "",
         "description": "JobType",
         "details": {
-            "JobTypeId": "b21572ab-e2a9-4789-8ec1-31f1e4377e88",
-            "Departments": 
-            [
-                {
-                    "Id": "7D7C827F-511B-44D4-BDDC-9948B05C636E"
-                },
-                {
-                    "Id": "E6E2B7F5-5D59-4682-935F-69D2F96620AC"
-                }
-            ]
+            {
+                "Departments": [
+                    {
+                        "DepartmentName": "ttttttttttt"
+                    },
+                    {
+                        "DepartmentName": "Design"
+                    },
+                    {
+                        "DepartmentName": "Design2"
+                    }
+                ]
+            }
         }
     }
