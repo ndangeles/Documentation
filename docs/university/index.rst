@@ -9,4 +9,12 @@ Please have a look to the available walkthrough lessons.
    :glob:
 
    timesheets/*/*
+   
+   
+Projects
+========
+
+.. toctree::
+   :glob:
+   
    projects/*/*
