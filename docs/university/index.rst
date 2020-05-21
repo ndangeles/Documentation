@@ -9,3 +9,4 @@ Please have a look to the available walkthrough lessons.
    :glob:
 
    timesheets/*/*
+   projects/*/*
