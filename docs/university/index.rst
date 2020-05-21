@@ -5,7 +5,7 @@ University
 
 
 Time Sheets
-===========
+-----------
 
 Please have a look to the available walkthrough lessons.
 
@@ -16,7 +16,7 @@ Please have a look to the available walkthrough lessons.
    
    
 Projects
-========
+--------
 
 .. toctree::
    :glob:
