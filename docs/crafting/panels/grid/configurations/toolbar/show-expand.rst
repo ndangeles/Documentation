@@ -7,5 +7,5 @@ Show Expand creates a button with a plus symbol in the toolbar.
 
 Once clicked expands all the groupings in the data grid.
 
-.. image:: crafting/panels/grid/assets/show-expand.PNG
+.. image:: ../assets/show-expand.PNG 
    :width: 50%
