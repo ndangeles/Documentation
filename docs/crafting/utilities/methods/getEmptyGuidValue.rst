@@ -15,4 +15,4 @@ Use the getEmptyGuidValue method when you want to set a value to a empty guid.
 
 .. sourcecode:: js
 
-    SW.getEmptyGuidValue(key, () => window["SW"].executeAPI('GET', `divisions/${key}/lookup`, null, {}));
+    SW.getEmptyGuidValue(key, () => SW.executeAPI('GET', `divisions/${key}/lookup`, null, {}));
