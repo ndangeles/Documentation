@@ -7,4 +7,4 @@ In this article, you will find information regarding the release for Skills Work
    :glob:
 
    *
-   */*
+   */index
