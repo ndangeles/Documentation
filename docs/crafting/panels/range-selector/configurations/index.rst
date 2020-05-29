@@ -1,9 +1,9 @@
 Configurations
 ==============
 
-Here you can find all the configurations available for the panel Grid.
+Here you can find all the configurations available for the panel Range Selector.
 
 .. toctree::
    :glob:
   
-   toolbar/index
+   value/index
