@@ -1,5 +1,5 @@
 Range Selector
-====
+==============
 
 
 .. toctree::
