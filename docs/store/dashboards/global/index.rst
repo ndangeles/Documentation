@@ -1,0 +1,8 @@
+Global
+======
+
+
+.. toctree::
+   :glob:
+   
+   *

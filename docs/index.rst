@@ -72,8 +72,7 @@ Beautiful Insights
    :glob:
 
    store/*
-   store/custom-actions/index
-   store/workspaces/index
+   store/*/index
    
 
 .. toctree::
