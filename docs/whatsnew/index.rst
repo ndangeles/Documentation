@@ -1,7 +1,7 @@
 Releases
 ========
 
-In this article, you will find information regarding the release for Skills Workflow.
+In this article, you will find the releases notes for Skills Workflow.
 
 .. toctree::
    :glob:
