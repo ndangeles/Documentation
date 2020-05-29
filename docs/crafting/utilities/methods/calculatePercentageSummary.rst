@@ -1,5 +1,5 @@
 calculatePercentageSummary
-++++++++++++
+++++++++++++++++++++++++++
 
 **When to use**
 
