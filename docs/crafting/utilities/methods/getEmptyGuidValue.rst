@@ -1,5 +1,5 @@
 getEmptyGuidValue
-++++++++++++
++++++++++++++++++
 
 **When to use**
 
