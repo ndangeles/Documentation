@@ -3,7 +3,7 @@ Store
 
 **When to use**
 
-Use this workspace whenever you need to update or import a workspace into your environment.
+Use this dashboard whenever you need to update or import a dashboard into your environment.
 
 .. image:: store/store.png
     :width: 80%
