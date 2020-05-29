@@ -1,4 +1,4 @@
-Clients form SAP will generate an internal client number when Company code is missing 
+Clients from SAP will generate an internal client number when Company code is missing 
 =====================================================================================
 
 .. note::
