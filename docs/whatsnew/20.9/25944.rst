@@ -1,0 +1,33 @@
+Clients form SAP will generate an internal client number when Company code is missing 
+=====================================================================================
+
+.. note::
+        **Work Item** 25944
+
+**Cause**
+
+Clients were being created without internal number.
+    1. It was found an issue when saving a billing client.
+    2. Whenever the Company code was missing in the Company configuration, the client's internal number was not being generated.
+
+
+**Prevent Future Issues**
+
+Everytime a new client is received from SAP and the Company code is missing, it will generate a internal number for that client.
+
+The information will be also logged, if the log level is set as "Info".
+
+**Configurations**
+
+In the Company's configuration, the Code should be configured.
+
+**Proposed Tests**
+
+    1. In Company's settings, configure the code
+    2. Create a new client on SAP
+    3. Check that the client is successfully created in the system
+    4. Repeat the step 2 and 3, this time without the Company code filled in the Company's configuration
+
+**Historical data**
+
+It was generated the internal number for all the clients without it.
