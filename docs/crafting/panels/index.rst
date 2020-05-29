@@ -7,3 +7,4 @@ Panels
    
    chart/*
    grid/*
+   range-selector/*
